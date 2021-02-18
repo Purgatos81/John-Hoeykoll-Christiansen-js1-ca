@@ -14,7 +14,10 @@ async function getBreweries() {
         const Breweries = jsonres;
 
         for (let i = 0; i < Breweries.length; i++) {
-            BrewResults.innerHTML += `<h2>Name: ${Breweries[i].name}</h2>`
+            BrewResults.innerHTML += `<h2>Name: ${Breweries[i].name}</h2>
+            <p>City: ${Breweries[i].city}</p>
+            <p>Brewery Type: ${Breweries[i].brewery_type}</p>
+            `
         }
 
     }
