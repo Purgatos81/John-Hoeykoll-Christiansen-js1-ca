@@ -10,6 +10,13 @@ async function getBreweries() {
         const response = await fetch(BrewURL);
         const jsonres = await response.json();
         console.log(jsonres);
+        BrewResults.innerHTML = "";
+        const Breweries = jsonres;
+
+        for (let i = 0; i < Breweries.length; i++) {
+            BrewResults.innerHTML += `<h2>Name: ${Breweries[i].name}</h2>`
+        }
+
     }
     catch(error) {
         console.log(error);
