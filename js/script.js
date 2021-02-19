@@ -1,4 +1,6 @@
-const BrewResults = document.querySelector(".brewResults")
+//index js
+
+const BrewResults = document.querySelector(".brewResults");
 const BrewURL = "https://api.openbrewerydb.org/breweries";
 
 
@@ -14,9 +16,12 @@ async function getBreweries() {
         const Breweries = jsonres;
 
         for (let i = 0; i < Breweries.length; i++) {
-            BrewResults.innerHTML += `<h2>Name: ${Breweries[i].name}</h2>
+            BrewResults.innerHTML += `<a href="details.html?id=${Breweries[i].id}">
+            <h2>Name: ${Breweries[i].name}</h2>
             <p>City: ${Breweries[i].city}</p>
+            <p>Country: ${Breweries[i].country}</p>
             <p>Brewery Type: ${Breweries[i].brewery_type}</p>
+            </a>
             `
         }
 
@@ -28,3 +33,5 @@ async function getBreweries() {
 }
 
 getBreweries();
+
+
