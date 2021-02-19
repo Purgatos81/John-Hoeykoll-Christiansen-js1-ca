@@ -25,13 +25,13 @@ async function fetchBrewerie() {
         DetailTitle.innerHTML = `${BrewerieDetails.name}`
 
         ResultContainer.innerHTML = `<h1>${BrewerieDetails.name}</h1>
-        <p>${BrewerieDetails.brewery_type}</p>
-        <p>${BrewerieDetails.country}</p>
-        <p>${BrewerieDetails.state}</p>
-        <p>${BrewerieDetails.city}</p>
-        <p>${BrewerieDetails.street}</p>
-        <p>${BrewerieDetails.phone}</p>
-        <p>${BrewerieDetails.website_url}</p>
+        <p>Type: ${BrewerieDetails.brewery_type}</p>
+        <p>Country: ${BrewerieDetails.country}</p>
+        <p>State: ${BrewerieDetails.state}</p>
+        <p>City: ${BrewerieDetails.city}</p>
+        <p>Street: ${BrewerieDetails.street}</p>
+        <p>Phone: ${BrewerieDetails.phone}</p>
+        <a href="${BrewerieDetails.website_url}">${BrewerieDetails.website_url}</a>
         `
 
     }
