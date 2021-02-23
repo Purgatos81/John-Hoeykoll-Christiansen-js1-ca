@@ -37,7 +37,7 @@ async function fetchBrewerie() {
     }
     catch(error) {
         console.log(error);
-        ResultContainer.innerHTML = message("error", error);
+        ResultContainer.innerHTML = "Obs, something whent wrong!";
     }
 }
 

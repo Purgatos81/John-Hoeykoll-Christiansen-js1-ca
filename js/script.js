@@ -28,7 +28,7 @@ async function getBreweries() {
     }
     catch(error) {
         console.log(error);
-        //Remember to put error message on index page.
+        BrewResults.innerHTML ="Obs, something whent wrong!"
     }
 }
 
