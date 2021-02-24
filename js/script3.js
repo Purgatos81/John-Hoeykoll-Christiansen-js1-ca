@@ -1,6 +1,6 @@
 //contact js
 const contForm = document.querySelector("#contactForm");
-const name = document.querySelector("#name");
+const nameInput = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
@@ -8,11 +8,15 @@ const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
+let nameValidator = 0;
+let addressValidator = 0;
+let emailValidator = 0;
+let subjectValidator = 0;
 
 function validateContactForm() {
     event.preventDefault();
 
-    if (name.value.trim().length > 0) {
+    if (nameInput.value.trim().length > 0) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
@@ -36,7 +40,8 @@ function validateContactForm() {
         emailError.style.display = "block";
     }
 
-    console.log("heelo");
+
+    //console.log("Hello");
 }
 
 contForm.addEventListener("submit", validateContactForm);
