@@ -2,11 +2,42 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+    background-color: darkgray;
+    margin: o;
+    padding: 10px;
+}
 
+li {
+    display: inline;
+    border-right: 1px solid white;
+}
 
+li a:hover {
+    color: wheat;
+}
+
+a {
+padding-right: 10px;
+text-decoration: none;
+
+}
+
+.nav-a {
+    color: white;
+}
 
 body {
-    background: lightblue;
+    background: white;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    color: black;
 }
 
 form {
@@ -36,6 +67,11 @@ button {
     margin-top: 8px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#contactForm {
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .validation-error {
