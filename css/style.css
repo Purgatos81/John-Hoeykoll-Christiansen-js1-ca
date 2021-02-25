@@ -41,6 +41,22 @@ p {
 }
 
 
+.brewResults {
+    background-color: beige;
+    margin: 10% 30%;
+    text-align: center;
+    border: black solid 1px;
+    padding-bottom: 20px;
+}
+
+.mainContainer {
+    background-color: beige;
+    margin: 10% 30%;
+    text-align: center;
+    border: black solid 1px;
+    padding-bottom: 20px;
+}
+
 form {
     padding: 2em;
     background: beige;
